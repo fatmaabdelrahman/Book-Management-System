@@ -5,6 +5,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "memory-storage": "^1.2.2",
+    "memorystorage": "^0.12.0",
     "sequential-ids": "^0.0.0"
   },
   "name": "note-app",
@@ -18,5 +19,8 @@
     "noteapp"
   ],
   "author": "fatma",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
