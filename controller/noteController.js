@@ -1,5 +1,6 @@
 var generator =require('../util/generator');
 
+var model = require('../model/note.model')
 exports.index = function(req,res){
     var seqIds   = generator.generate(); 
     res.send("get all notes"+ seqIds);
