@@ -4,7 +4,7 @@ var cors = require('cors');
 var bodyParser = require('body-parser')
 const app = express();
 var storeRoute = require('./route/store.route');
-// var bookRoute = require('./route/book.route');
+var bookRoute = require('./route/book.route');
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,7 +15,7 @@ app.use(cors());
 
 
 app.use("/api/v1" , storeRoute);
-// app.use("/api/v1" , bookRoute);
+app.use("/api/v1" , bookRoute);
 
 app.get("/",function(req,res){
     res.send("server Started ......")

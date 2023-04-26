@@ -4,6 +4,7 @@ CREATE TABLE book_store.books (
     isbn varchar (50) NOT NULL,
     description varchar (1000)  null,
     publisher varchar (50) NOT null,
+    author varchar (50) NOT null,
     pages varchar (5)  null,
     store_code varchar (5) NOT null,
     created_on timestamp NOT null,
