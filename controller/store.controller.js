@@ -20,7 +20,7 @@ exports.store= async (req,res) =>{
         var createdBy = "admin";
         var createdOn = new Date();
         // req.body
-        var name = req.body.name;
+        var name = req.body.storeName;
         var address = req.body.address;
         console.log("name : " + name   + " ----- address : " + address)
         if(!name || !address){
@@ -33,7 +33,7 @@ exports.store= async (req,res) =>{
       return res.status(201).send("Successfully store created ");
     } catch (err) {
         console.log("Error : " + err);
-        return res.status(500).send({error : 'Failed to save store'});
+        return res.status(500).send({error : err});
     }
 
 }
