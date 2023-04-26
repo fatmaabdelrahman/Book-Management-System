@@ -11,11 +11,11 @@ CREATE TABLE book_store.books (
     constraint books_pkey primary key (id) 
 );
 
--- books.store definition
+-- book_store.stores definition
 
 -- Drop table
 
--- DROP TABLE books.store;
+-- DROP TABLE book_store.stores;
 
 CREATE TABLE book_store.stores (
 	id serial NOT NULL,
